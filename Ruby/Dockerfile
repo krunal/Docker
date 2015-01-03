@@ -19,10 +19,12 @@ RUN curl -sSL https://get.rvm.io | bash -s stable
 ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 RUN /usr/local/rvm/bin/rvm-shell && rvm requirements
-RUN /usr/local/rvm/bin/rvm-shell && rvm install 2.0.0
-RUN /usr/local/rvm/bin/rvm-shell && rvm use 2.0.0 --default
+RUN /usr/local/rvm/bin/rvm-shell && rvm install 2.1.4
+RUN /usr/local/rvm/bin/rvm-shell && rvm use 2.1.4 --default
 
-ENV PATH /usr/local/rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PATH /usr/local/rvm/rubies/ruby-2.1.4/bin:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+
 
 
 
